@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doctor's Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <video autoplay>
+                <source src="logo/Medical-Logo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav>
+            <a href="#hero" class="active">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Book Appointment</a>
+            <a href="#contact">Contact</a>
+            <div class="search-container">
+                <input id="searchInput" type="text" placeholder="Search..." aria-label="Search"/>
+                <button onclick="searchDoctors()" class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <button class="dark-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+        <section id="hero" class="hero">
+            <h1>Welcome to Medical Care</h1>
+            <p>Your health is our priority. We connect you with the best doctors in town.</p>
+            <p>Book an appointment with our expert doctors today!</p>
+        </section>
+        <section id="doctors">
+            <h2 class="section-title">Our Expert Doctors</h2>
+            <div class="doctors-list" aria-label="List of doctors">
+                <article class="doctor-card" tabindex="0">
+                    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Dr. John Smith"
+                        class="doctor-photo" />
+                    <h3 class="doctor-name">Dr. John Smith</h3>
+                    <p class="doctor-specialty">Cardiologist</p>
+                </article>
+                <article class="doctor-card" tabindex="0">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Emily Johnson"
+                        class="doctor-photo" />
+                    <h3 class="doctor-name">Dr. Emily Johnson</h3>
+                    <p class="doctor-specialty">Dermatologist</p>
+                </article>
+                <article class="doctor-card" tabindex="0">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Michael Lee"
+                        class="doctor-photo" />
+                    <h3 class="doctor-name">Dr. Michael Lee</h3>
+                    <p class="doctor-specialty">Neurologist</p>
+                </article>
+                <article class="doctor-card" tabindex="0">
+                    <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Dr. Sarah Davis"
+                        class="doctor-photo" />
+                    <h3 class="doctor-name">Dr. Sarah Davis</h3>
+                    <p class="doctor-specialty">Pediatrician</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="appointment" id="appointment">
+            <h2 class="section-title">Book an Appointment</h2>
+            <form id="appointment-form" novalidate>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required minlength="3" />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+880-0000000" pattern="^\+?\d{7,15}$"
+                    required />
+
+                <label for="doctor">Choose Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Select a doctor</option>
+                    <option value="Dr. John Smith">Dr. John Smith - Cardiologist</option>
+                    <option value="Dr. Emily Johnson">Dr. Emily Johnson - Dermatologist</option>
+                    <option value="Dr. Michael Lee">Dr. Michael Lee - Neurologist</option>
+                    <option value="Dr. Sarah Davis">Dr. Sarah Davis - Pediatrician</option>
+                </select>
+
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required min="" />
+
+                <button class="appointment-btn" type="submit">Book Now</button>
+                <p class="confirmation" id="confirmation-msg" role="alert" aria-live="polite" style="display:none;"></p>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <p style="text-align:center; max-width:600px; margin:auto;">
+                For any inquiries, call us at <strong>+880</strong> or email
+                <a href="mailto:contact@healthcareplus.com">contact@medicalcare.com</a>.
+            </p>
+        </section>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
