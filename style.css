@@ -14,7 +14,6 @@
     --card-bg: #ffffff;
     --header-bg: #bfc6cb;
     --nav-hover: #b3bac0;
-    --accent-color: #496473;
     --btn-bg: #8aabc2;
     --btn-hover: #004a75;
     --input-border: #66737c;
@@ -27,7 +26,6 @@ body.dark {
     --card-bg: #1f1f1f;
     --header-bg: #222;
     --nav-hover: #333;
-    --accent-color: #66ccff;
     --btn-bg: #333;
     --btn-hover: #444;
     --input-border: #555;
