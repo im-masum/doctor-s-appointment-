@@ -122,7 +122,7 @@ header .logo video {
 }
 
 nav {
-    display:inline-flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
@@ -154,8 +154,9 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     gap: 0.5rem;
-    
+
 }
+
 .search-container input {
     padding: 0.5rem;
     background-color: transparent;
@@ -164,7 +165,8 @@ nav a:hover {
     width: 500px;
     font-size: clamp(0.9rem, 2vw + 0.5rem, 1.2rem);
 }
-.search-btn{
+
+.search-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,17 +179,19 @@ nav a:hover {
     font-size: clamp(0.9rem, 2vw + 0.5rem, 1.2rem);
     transition: background-color 0.3s ease;
 }
-.search-btn i{
+
+.search-btn i {
 
     color: var(--text-color);
-    font-size: 1.4rem ;
+    font-size: 1.4rem;
     margin: 0 0.5rem;
     cursor: pointer;
     transition: color 0.3s ease;
     position: relative;
     top: 2px;
 }
-.dark-toggle{
+
+.dark-toggle {
     background-color: var(--btn-bg);
     color: var(--text-color);
     border: none;
@@ -197,9 +201,11 @@ nav a:hover {
     font-size: clamp(0.9rem, 2vw + 0.5rem, 1.2rem);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .dark-toggle:hover, .search-btn:hover {
     background-color: var(--btn-hover);
 }
+
 /* Section*/
 section {
     display: flex;
@@ -213,10 +219,10 @@ section {
     background: var(--card-bg);
     color: var(--text-color);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-h2.section-title {
+.section-title {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: clamp(1.5rem, 5vw + 1rem, 2.5rem);
@@ -330,12 +336,13 @@ input:focus, select:focus {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 1rem;
-} 
+}
 
 button:hover {
     background-color: var(--btn-hover);
     color: white;
 }
+
 /* Footer */
 footer {
     display: flex;
