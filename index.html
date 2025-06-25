@@ -18,91 +18,227 @@
             </video>
         </div>
         <nav>
-            <a href="#hero" class="active">Home</a>
-            <a href="#doctors">Doctors</a>
-            <a href="#appointment">Book Appointment</a>
-            <a href="#contact">Contact</a>
-            <div class="search-container">
-                <input id="searchInput" type="text" placeholder="Search..." aria-label="Search"/>
-                <button onclick="searchDoctors()" class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="nav-links">
+                <a href="#hero" id="nav-home"><i class="fas fa-home"></i> Home</a>
+                <span class="nav-separator"></span>
+                <a href="#services" id="nav-services"><i class="fas fa-concierge-bell"></i> Services</a>
+                <span class="nav-separator"></span>
+                <a href="#doctors" id="nav-doctors"><i class="fas fa-user-md"></i> Doctors</a>
+                <span class="nav-separator"></span>
+                <a href="#appointment" id="nav-appointment"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+                <span class="nav-separator"></span>
+                <a href="#contact" id="nav-contact"><i class="fas fa-envelope"></i> Contact</a>
             </div>
-            <button class="dark-toggle" id="themeToggle">🌙</button>
+            <div class="search-container">
+                <input id="searchInput" type="text" placeholder="Search..." aria-label="Search" />
+                <button onclick="searchDoctors()" class="search-btn" type="submit"><i
+                        class="fas fa-search"></i></button>
+            </div>
+            <button class="hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
+        <button class="dark-toggle" id="themeToggle">🌙</button>
+        <div class="nav-backdrop" id="navBackdrop"></div>
     </header>
 
-        <section id="hero" class="hero">
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <span class="hero-icon"><i class="fas fa-user-md"></i></span>
             <h1>Welcome to Medical Care</h1>
             <p>Your health is our priority. We connect you with the best doctors in town.</p>
             <p>Book an appointment with our expert doctors today!</p>
-        </section>
-        <section id="doctors">
-            <h2 class="section-title">Our Expert Doctors</h2>
-            <div class="doctors-list" aria-label="List of doctors">
-                <article class="doctor-card" tabindex="0">
-                    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Dr. John Smith"
-                        class="doctor-photo" />
-                    <h3 class="doctor-name">Dr. John Smith</h3>
-                    <p class="doctor-specialty">Cardiologist</p>
-                </article>
-                <article class="doctor-card" tabindex="0">
-                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Emily Johnson"
-                        class="doctor-photo" />
-                    <h3 class="doctor-name">Dr. Emily Johnson</h3>
-                    <p class="doctor-specialty">Dermatologist</p>
-                </article>
-                <article class="doctor-card" tabindex="0">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Michael Lee"
-                        class="doctor-photo" />
-                    <h3 class="doctor-name">Dr. Michael Lee</h3>
-                    <p class="doctor-specialty">Neurologist</p>
-                </article>
-                <article class="doctor-card" tabindex="0">
-                    <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Dr. Sarah Davis"
-                        class="doctor-photo" />
-                    <h3 class="doctor-name">Dr. Sarah Davis</h3>
-                    <p class="doctor-specialty">Pediatrician</p>
-                </article>
+            <a href="#appointment" class="hero-cta">Book Appointment</a>
+        </div>
+    </section>
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-list" aria-label="List of services">
+            <article class="service-card" tabindex="0">
+                <i class="fas fa-stethoscope service-icon"></i>
+                <h3 class="service-name">General Consultation</h3>
+                <p class="service-desc">Comprehensive health checkups and personalized medical advice for all ages.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+                <i class="fas fa-heartbeat service-icon"></i>
+                <h3 class="service-name">Cardiology</h3>
+                <p class="service-desc">Advanced heart care and diagnostics by experienced cardiologists.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+                <i class="fas fa-user-md service-icon"></i>
+                <h3 class="service-name">Specialist Referrals</h3>
+                <p class="service-desc">Access to a wide network of medical specialists for specific health needs.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+                <i class="fas fa-syringe service-icon"></i>
+                <h3 class="service-name">Vaccinations</h3>
+                <p class="service-desc">Routine and travel vaccinations for children and adults.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="doctors">
+        <h2 class="section-title">Our Expert Doctors</h2>
+        <div class="doctors-list" aria-label="List of doctors">
+            <article class="doctor-card" tabindex="0">
+                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Dr. John Smith" class="doctor-photo" />
+                <h3 class="doctor-name">Dr. John Smith</h3>
+                <p class="doctor-specialty">Cardiologist</p>
+            </article>
+            <article class="doctor-card" tabindex="0">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Emily Johnson"
+                    class="doctor-photo" />
+                <h3 class="doctor-name">Dr. Emily Johnson</h3>
+                <p class="doctor-specialty">Dermatologist</p>
+            </article>
+            <article class="doctor-card" tabindex="0">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Michael Lee" class="doctor-photo" />
+                <h3 class="doctor-name">Dr. Michael Lee</h3>
+                <p class="doctor-specialty">Neurologist</p>
+            </article>
+            <article class="doctor-card" tabindex="0">
+                <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Dr. Sarah Davis"
+                    class="doctor-photo" />
+                <h3 class="doctor-name">Dr. Sarah Davis</h3>
+                <p class="doctor-specialty">Pediatrician</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+        <h2 class="section-title">Book an Appointment</h2>
+        <form id="appointment-form" novalidate>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required minlength="3" />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+880-0000000" pattern="^\+?\d{7,15}$" required />
+
+            <label for="doctor">Choose Doctor</label>
+            <select id="doctor" name="doctor" required>
+                <option value="" disabled selected>Select a doctor</option>
+                <option value="Dr. John Smith">Dr. John Smith - Cardiologist</option>
+                <option value="Dr. Emily Johnson">Dr. Emily Johnson - Dermatologist</option>
+                <option value="Dr. Michael Lee">Dr. Michael Lee - Neurologist</option>
+                <option value="Dr. Sarah Davis">Dr. Sarah Davis - Pediatrician</option>
+            </select>
+
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date" required min="" />
+
+            <button class="appointment-btn" type="submit">Book Now</button>
+            <p class="confirmation" id="confirmation-msg" role="alert" aria-live="polite" style="display:none;"></p>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-subtitle">We'd love to hear from you. Here's how you can reach us.</p>
+                <div class="contact-divider"><span></span></div>
+                <ul class="contact-info-list">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Health Ave, MedCity</li>
+                    <li><i class="fas fa-phone-alt"></i><a href="tel:+880">+880</a></li>
+                    <li><i class="fas fa-envelope"></i><a
+                            href="mailto:contact@medicalcare.com">contact@medicalcare.com</a></li>
+                </ul>
+                <div class="contact-social">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </section>
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form" aria-label="Contact form">
+                    <h3 class="contact-form-title">Send Us a Message</h3>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="contact-name" placeholder=" " required
+                            minlength="2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="contact-email" placeholder=" " required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="contact-message" placeholder=" " rows="4"
+                            required></textarea>
+                    </div>
+                    <button class="appointment-btn" type="submit">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                    <p class="confirmation" id="contact-confirmation" role="alert" aria-live="polite"
+                        style="display:none;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
 
-        <section class="appointment" id="appointment">
-            <h2 class="section-title">Book an Appointment</h2>
-            <form id="appointment-form" novalidate>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required minlength="3" />
+    <section class="newsletter-section">
+        <h2 class="newsletter-title"><i class="fas fa-envelope-open-text"></i> Subscribe to Our Newsletter</h2>
+        <p class="newsletter-desc">Get the latest health tips, news, and updates delivered straight to your inbox.</p>
+        <form class="newsletter-form" aria-label="Newsletter signup">
+            <label for="newsletter-email" class="newsletter-label">Email Address</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" class="newsletter-input"
+                placeholder="Enter your email" required />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+    </section>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="+880-0000000" pattern="^\+?\d{7,15}$"
-                    required />
-
-                <label for="doctor">Choose Doctor</label>
-                <select id="doctor" name="doctor" required>
-                    <option value="" disabled selected>Select a doctor</option>
-                    <option value="Dr. John Smith">Dr. John Smith - Cardiologist</option>
-                    <option value="Dr. Emily Johnson">Dr. Emily Johnson - Dermatologist</option>
-                    <option value="Dr. Michael Lee">Dr. Michael Lee - Neurologist</option>
-                    <option value="Dr. Sarah Davis">Dr. Sarah Davis - Pediatrician</option>
-                </select>
-
-                <label for="date">Appointment Date</label>
-                <input type="date" id="date" name="date" required min="" />
-
-                <button class="appointment-btn" type="submit">Book Now</button>
-                <p class="confirmation" id="confirmation-msg" role="alert" aria-live="polite" style="display:none;"></p>
-            </form>
-        </section>
-
-        <section id="contact">
-            <h2 class="section-title">Contact Us</h2>
-            <p style="text-align:center; max-width:600px; margin:auto;">
-                For any inquiries, call us at <strong>+880</strong> or email
-                <a href="mailto:contact@healthcareplus.com">contact@medicalcare.com</a>.
-            </p>
-        </section>
-    
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column about-us">
+                <div class="footer-logo">
+                    <video autoplay muted loop playsinline>
+                        <source src="logo/Medical-Logo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>Your trusted partner in healthcare. Providing top-quality medical services with a personal touch.</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Health Ave, MedCity</li>
+                    <li><i class="fas fa-phone-alt"></i> +880</li>
+                    <li><i class="fas fa-envelope"></i> contact@medicalcare.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2024 Medical Care. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
