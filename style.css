@@ -113,14 +113,8 @@ header {
     margin: 0 auto;
     transition: background 0.5s cubic-bezier(.77, 0, .18, 1), box-shadow 0.5s, padding 0.3s, border-radius 0.3s;
 }
+/* 
 
-header.scrolled {
-    background: linear-gradient(90deg, rgba(191, 198, 203, 0.98) 60%, rgba(0, 170, 255, 0.18) 100%);
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18), 0 2px 0 #b2ebf2;
-    padding: min(1em, 6%);
-    border-radius: 0 0 14px 14px;
-    border-bottom: 2.5px solid #b2ebf2;
-}
 
 header .logo {
     display: flex;
