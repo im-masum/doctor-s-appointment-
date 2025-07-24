@@ -490,21 +490,25 @@ button:hover {
 }
 
 /* Footer */
-footer {
-    background: #1f2937;
-    color: #d1d5db;
-    padding-top: 2rem;
-    margin-top: 2.5rem;
+.footer {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    padding:min(1rem, 8%) 1rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
-    max-width: 1200px;
+    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
-    padding: 2rem 1.5rem 2.5rem 1.5rem;
+    padding: min(1rem, 8%) 2rem;
+    
 }
 
 .footer-column {
@@ -543,6 +547,7 @@ footer {
     border-bottom: 2px solid #00aaff;
     padding-bottom: 0.5rem;
     display: inline-block;
+    
 }
 
 .footer-links, .footer-contact {
@@ -602,9 +607,12 @@ footer {
 
 .footer-bottom {
     background: #111827;
-    padding: 1rem;
+    padding: min(1rem, 8%) 4rem;
     text-align: center;
     border-top: 1px solid #374151;
+    border-radius: 10px;
+    margin-top: 2rem;
+    
 }
 
 .footer-copy {
@@ -1129,6 +1137,7 @@ nav.open~.nav-backdrop {
     border-radius: 18px 18px 0 0;
     box-shadow: 0 -2px 12px rgba(0, 170, 255, 0.07);
     margin-top: 2rem;
+
 }
 
 .footer-copy {
