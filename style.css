@@ -113,8 +113,6 @@ header {
     margin: 0 auto;
     transition: background 0.5s cubic-bezier(.77, 0, .18, 1), box-shadow 0.5s, padding 0.3s, border-radius 0.3s;
 }
-/* 
-
 
 header .logo {
     display: flex;
