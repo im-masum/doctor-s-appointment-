@@ -456,7 +456,7 @@ input, select {
     color: var(--text-color);
     border: 2px solid var(--input-border);
     padding: 0.6rem;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
     width: 100%;
@@ -479,7 +479,7 @@ input:focus, select:focus {
     border: none;
     padding: 0.8rem;
     font-size: 1.1rem;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 1rem;
