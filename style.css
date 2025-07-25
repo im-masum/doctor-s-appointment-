@@ -996,53 +996,6 @@ nav.open~.nav-backdrop {
     letter-spacing: 0.5px;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem 1.2rem 1rem;
-    background: rgba(191, 198, 203, 0.85);
-    border-radius: 18px 18px 0 0;
-    box-shadow: 0 -2px 12px rgba(0, 170, 255, 0.07);
-    margin-top: 2rem;
-
-}
-
-.footer-copy {
-    color: #555;
-    font-size: 1rem;
-    margin-bottom: 0.7rem;
-    text-align: center;
-}
-
-.footer-social {
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-social a {
-    color: #00aaff;
-    font-size: 1.5rem;
-    background: #e0f7fa;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s, color 0.2s, transform 0.18s;
-    box-shadow: 0 2px 8px #00aaff11;
-}
-
-.footer-social a:hover, .footer-social a:focus {
-    background: #00aaff;
-    color: #fff;
-    transform: scale(1.12);
-    outline: none;
-}
 
 .newsletter-section {
     display: flex;
