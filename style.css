@@ -547,8 +547,6 @@ nav.open~.nav-backdrop {
 /* ======== Hero Section Close ========*/
 
 /* ======== Service Section start ======== */
-
-
 .services-list {
     display: flex;
     width: 100%;
@@ -625,6 +623,7 @@ nav.open~.nav-backdrop {
 }
 
 /* ======== Service Section start ======== */
+
 /*======= Doctors list Section  Start=======*/
 .doctors-list {
     display: flex;
@@ -681,7 +680,7 @@ nav.open~.nav-backdrop {
 /*======= Doctors list Section Close=======*/
 
 
-/* Appointment form */
+/* ========Appointment form =========*/
 form {
     display: flex;
     flex-direction: column;
@@ -772,7 +771,6 @@ button:hover {
     }
 }
 
-/* =======Doctors Section Close */
 
 #queries {
     display: flex;
@@ -885,17 +883,7 @@ button:hover {
     }
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    max-width: 400px;
-    margin: 2rem auto 0 auto;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0, 170, 255, 0.07);
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-}
+
 
 .contact-form label {
     font-weight: 600;
@@ -944,44 +932,11 @@ button:hover {
     }
 }
 
-.contact-subtitle {
-    text-align: center;
-    color: #0077cc;
-    font-size: 1.15rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.contact-divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.2rem;
-}
-
-.contact-divider span {
-    display: block;
-    width: 60px;
-    height: 4px;
-    border-radius: 2px;
-    background: linear-gradient(90deg, #00aaff 60%, #ccb100 100%);
-    opacity: 0.7;
-}
 
 .contact-info-item .fa-map-marker-alt {
     color: #ccb100;
 }
 
-.contact-form-title {
-    text-align: center;
-    color: #00aaff;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-    letter-spacing: 0.5px;
-}
 
 
 
@@ -1033,6 +988,33 @@ button:hover {
     z-index: 1;
 }
 
+
+
+.contact-subtitle {
+    text-align: center;
+    color: #0077cc;
+    font-size: 1.15rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.contact-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.contact-divider span {
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #00aaff 60%, #ccb100 100%);
+    opacity: 0.7;
+}
 .contact-info-list {
     list-style: none;
     padding: 0;
@@ -1112,13 +1094,21 @@ button:hover {
     max-width: 100%;
     margin: 0 auto;
 }
+.contact-form-title {
+    text-align: center;
+    color: #00aaff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+}
 
 @media (max-width: 900px) {
     .contact-container {
         flex-direction: column;
         padding: 1.2rem 0.5rem;
     }
-
+    
     .contact-details {
         padding-left: 0;
     }
@@ -1132,8 +1122,9 @@ button:hover {
     }
 }
 
-/* ====== Newsletter  Section======= */
 
+
+/* ====== Newsletter  Section======= */
 .newsletter-section {
     display: flex;
     flex-direction: column;
