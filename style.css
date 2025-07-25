@@ -482,8 +482,8 @@ nav.open~.nav-backdrop {
 
 
 /* ======== Hero Section Start ========*/
-
 .hero {
+    padding: min(1rem, 8%) 2rem;
     background: linear-gradient(90deg, #00b7ff 60%, #ccb100 100%);
 }
 
@@ -536,7 +536,6 @@ nav.open~.nav-backdrop {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background 0.3s, transform 0.2s;
-    text-decoration: none;
 }
 
 .hero-cta:hover {
@@ -545,8 +544,7 @@ nav.open~.nav-backdrop {
     color: #222;
 }
 
-
-/* ======== Hero Section Start ========*/
+/* ======== Hero Section Close ========*/
 
 /*======= Doctors list Section  Start=======*/
 .doctors-list {
