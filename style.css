@@ -57,6 +57,12 @@ body {
 
 }
 
+/* ======= Section Start ========*/
+
+/* ======= Section Close ========*/
+
+
+
 /* ======= Header Section Start ======== */
 header {
     display: flex;
@@ -318,29 +324,6 @@ nav.open~.nav-backdrop {
 
 /* ======== Header Section Close */
 
-/* Section*/
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 50vh;
-    margin-block: 1rem;
-    padding: min(1em, 8%);
-    background: var(--card-bg);
-    color: var(--text-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: clamp(1.5rem, 5vw + 1rem, 2.5rem);
-    color: #7f8081;
-    font-weight: 700;
-}
 
 /* Doctors list using flexbox */
 .doctors-list {
@@ -1393,7 +1376,7 @@ nav.open~.nav-backdrop {
 }
 
 @media (max-width: 768px) {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
     }
