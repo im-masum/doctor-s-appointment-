@@ -610,19 +610,24 @@ button:hover {
 }
 
 .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background: #111827;
     padding: min(1rem, 8%) 4rem;
     text-align: center;
     border-top: 1px solid #374151;
     border-radius: 10px;
-    margin-top: 2rem;
-    
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .footer-copy {
     color: #9ca3af;
-    font-size: 0.95rem;
-    margin: 0;
+    font-size: 1rem;
+    margin: 0 auto;
 }
 
 /* Confirmation message */
