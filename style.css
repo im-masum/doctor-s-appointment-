@@ -624,7 +624,6 @@ nav.open~.nav-backdrop {
     }
 }
 
-
 /* ======== Service Section start ======== */
 /*======= Doctors list Section  Start=======*/
 .doctors-list {
@@ -1133,7 +1132,7 @@ button:hover {
     }
 }
 
-/* ====== Newsletter ======= */
+/* ====== Newsletter  Section======= */
 
 .newsletter-section {
     display: flex;
@@ -1243,8 +1242,9 @@ button:hover {
     }
 }
 
+/* ====== Newsletter  Section Close======= */
 
-/*========= Footer ======== */
+/*========= Footer Section Start ======== */
 .footer {
     display: flex;
     max-width: 100%;
@@ -1426,3 +1426,5 @@ button:hover {
         height: 2rem;
     }
 }
+
+/* =========Footer Section close======= */
