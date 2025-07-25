@@ -1044,19 +1044,6 @@ nav.open~.nav-backdrop {
     outline: none;
 }
 
-@media (max-width: 600px) {
-    .footer-content {
-        padding: 1.2rem 0.2rem 0.7rem 0.2rem;
-        border-radius: 12px 12px 0 0;
-    }
-
-    .footer-social a {
-        font-size: 1.2rem;
-        width: 2rem;
-        height: 2rem;
-    }
-}
-
 .newsletter-section {
     display: flex;
     flex-direction: column;
@@ -1164,6 +1151,7 @@ nav.open~.nav-backdrop {
         max-width: 100%;
     }
 }
+
 
 .contact-section {
     padding: 3rem 1.5rem;
@@ -1317,7 +1305,7 @@ nav.open~.nav-backdrop {
     display: flex;
     max-width: 100%;
     width: 100%;
-    padding:min(1rem, 8%) 1rem;
+    padding: min(1rem, 8%) 1rem;
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
@@ -1332,7 +1320,7 @@ nav.open~.nav-backdrop {
     width: 90%;
     margin: 0 auto;
     padding: min(1rem, 8%) 2rem;
-    
+
 }
 
 .footer-column {
@@ -1372,7 +1360,7 @@ nav.open~.nav-backdrop {
     border-bottom: 2px solid #00aaff;
     padding-bottom: 0.5rem;
     display: inline-block;
-    
+
 }
 
 .footer-links, .footer-contact {
@@ -1450,4 +1438,18 @@ nav.open~.nav-backdrop {
     color: #9ca3af;
     font-size: 1rem;
     margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 1.2rem 0.2rem 0.7rem 0.2rem;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .footer-social a {
+        font-size: 1.2rem;
+        width: 2rem;
+        height: 2rem;
+    }
 }
