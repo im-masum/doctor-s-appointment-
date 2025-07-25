@@ -57,7 +57,7 @@ body {
 
 }
 
-/* ======= Header Start ======== */
+/* ======= Header Section Start ======== */
 header {
     display: flex;
     position: sticky;
@@ -315,6 +315,8 @@ nav.open~.nav-backdrop {
 .dark-toggle:hover, .search-btn:hover {
     background-color: var(--btn-hover);
 }
+
+/* ======== Header Section Close */
 
 /* Section*/
 section {
