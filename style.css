@@ -437,9 +437,9 @@ form {
     width: 50%;
     max-width: 100%;
     margin: 2rem auto 3rem;
-    padding: min();
+    padding: min(1rem, 8%) 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 14px rgb(0 0 0 / 0.1);
+    box-shadow: 0 2px 14px rgba(111, 103, 103, 0.1);
     gap: 1.2rem;
 }
 
