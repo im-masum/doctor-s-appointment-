@@ -928,9 +928,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .contact-form {
-        padding: 1.2rem 0.5rem 1rem 0.5rem;
-    }
 }
 
 
@@ -1112,17 +1109,17 @@ button:hover {
     .contact-details {
         padding-left: 0;
     }
-
+    
     .contact-details::before {
         display: none;
     }
-
     .contact-form {
         padding: 1.2rem 0.5rem 1rem 0.5rem;
     }
+    
 }
 
-
+/* ======== Contact Section Close ========= */
 
 /* ====== Newsletter  Section======= */
 .newsletter-section {
