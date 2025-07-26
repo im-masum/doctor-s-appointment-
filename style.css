@@ -886,55 +886,6 @@ button:hover {
 
 
 
-.contact-form label {
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    color: var(--text-color);
-    font-size: clamp(1rem, 2vw + 0.5rem, 1.1rem);
-}
-
-.contact-form input,
-.contact-form textarea {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border: 2px solid var(--input-border);
-    padding: 0.6rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
-    width: 100%;
-    resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-color: #00aaff;
-    box-shadow: 0 0 5px rgba(0, 170, 255, 0.25);
-    outline: none;
-}
-
-.contact-form .appointment-btn {
-    margin-top: 0.5rem;
-}
-
-.contact-info-card+.contact-desc {
-    margin-top: 1.5rem;
-}
-
-.contact-desc+.contact-form {
-    margin-top: 1.5rem;
-}
-
-@media (max-width: 768px) {
-}
-
-
-.contact-info-item .fa-map-marker-alt {
-    color: #ccb100;
-}
-
 
 .contact-section {
     padding: 3rem 1.5rem;
@@ -1100,7 +1051,56 @@ button:hover {
     letter-spacing: 0.5px;
 }
 
-@media (max-width: 900px) {
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--text-color);
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.1rem);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--input-border);
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: #00aaff;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.25);
+    outline: none;
+}
+
+.contact-form .appointment-btn {
+    margin-top: 0.5rem;
+}
+
+.contact-info-card+.contact-desc {
+    margin-top: 1.5rem;
+}
+
+.contact-desc+.contact-form {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+}
+
+
+.contact-info-item .fa-map-marker-alt {
+    color: #ccb100;
+}
+
+@media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
         padding: 1.2rem 0.5rem;
@@ -1114,14 +1114,14 @@ button:hover {
         display: none;
     }
     .contact-form {
-        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        padding: min(1rem, 8%) 1rem;
     }
     
 }
 
 /* ======== Contact Section Close ========= */
 
-/* ====== Newsletter  Section======= */
+/* ====== Newsletter  Section  Start======= */
 .newsletter-section {
     display: flex;
     flex-direction: column;
