@@ -785,6 +785,7 @@ button:hover {
     color: var(--text-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.13), 0 6px 20px 0 rgba(0, 0, 0, 0.13);
+    
 }
 
 #queries-form label {
@@ -926,7 +927,7 @@ button:hover {
     margin-top: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contact-form {
         padding: 1.2rem 0.5rem 1rem 0.5rem;
     }
@@ -936,8 +937,6 @@ button:hover {
 .contact-info-item .fa-map-marker-alt {
     color: #ccb100;
 }
-
-
 
 
 .contact-section {
@@ -987,8 +986,6 @@ button:hover {
     z-index: 1;
 
 }
-
-
 
 .contact-subtitle {
     text-align: center;
