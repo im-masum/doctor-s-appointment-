@@ -950,7 +950,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     background: var(--card-bg);
@@ -983,9 +983,9 @@ button:hover {
 }
 
 .contact-details .section-title {
-    /* text-align: left; */
     position: relative;
     z-index: 1;
+
 }
 
 
@@ -1015,13 +1015,14 @@ button:hover {
     background: linear-gradient(90deg, #00aaff 60%, #ccb100 100%);
     opacity: 0.7;
 }
+
 .contact-info-list {
     list-style: none;
     padding: min(.5rem, 8%) 1rem;
     margin: 1.5rem 0;
     z-index: 1;
     position: relative;
-    
+
 }
 
 .contact-info-list li {
@@ -1095,6 +1096,7 @@ button:hover {
     max-width: 100%;
     margin: 0 auto;
 }
+
 .contact-form-title {
     text-align: center;
     color: #00aaff;
@@ -1109,7 +1111,7 @@ button:hover {
         flex-direction: column;
         padding: 1.2rem 0.5rem;
     }
-    
+
     .contact-details {
         padding-left: 0;
     }
