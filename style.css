@@ -1009,7 +1009,7 @@ button:hover {
 
 .contact-divider span {
     display: block;
-    width: 60px;
+    width: 100px;
     height: 4px;
     border-radius: 2px;
     background: linear-gradient(90deg, #00aaff 60%, #ccb100 100%);
