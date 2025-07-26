@@ -983,7 +983,7 @@ button:hover {
 }
 
 .contact-details .section-title {
-    text-align: left;
+    /* text-align: left; */
     position: relative;
     z-index: 1;
 }
@@ -1017,10 +1017,11 @@ button:hover {
 }
 .contact-info-list {
     list-style: none;
-    padding: 0;
+    padding: min(.5rem, 8%) 1rem;
     margin: 1.5rem 0;
     z-index: 1;
     position: relative;
+    
 }
 
 .contact-info-list li {
