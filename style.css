@@ -785,7 +785,7 @@ button:hover {
     color: var(--text-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.13), 0 6px 20px 0 rgba(0, 0, 0, 0.13);
-    
+
 }
 
 #queries-form label {
@@ -821,7 +821,19 @@ button:hover {
     margin-top: 0.5rem;
 }
 
-
+.contact-info-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    background: rgba(0, 170, 255, 0.07);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 170, 255, 0.08);
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem auto 0 auto;
+    max-width: 500px;
+}
 
 .contact-info-item {
     display: flex;
@@ -1094,14 +1106,15 @@ button:hover {
     .contact-details {
         padding-left: 0;
     }
-    
+
     .contact-details::before {
         display: none;
     }
+
     .contact-form {
         padding: min(1rem, 8%) 1rem;
     }
-    
+
 }
 
 /* ======== Contact Section Close ========= */
