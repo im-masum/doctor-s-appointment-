@@ -9,8 +9,9 @@ toggle.addEventListener("click", () => {
   const isDark = document.body.classList.contains("dark");
   setTheme(!isDark);
 });
-// Load saved theme
+// Initial theme setup
 if (localStorage.getItem("theme") === "dark") setTheme(true);
+
 
 // Doctor selection handler
 const doctorSelect = document.getElementById("doctor");
